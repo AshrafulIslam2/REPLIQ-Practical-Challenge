@@ -2,11 +2,11 @@ import Payment from '@/components/Payment/Payment'
 import React, { useState } from 'react'
 
 const CartFooter = ({total}) => {
-  const [paymentToggle,setPaymentToggle] =useState(true)
+  const [paymentToggle,setPaymentToggle] =useState(false)
   return (
     <>
     {
-      paymentToggle && <Payment  setPaymentToggle={setPaymentToggle}/>
+      paymentToggle && <Payment  total={total} setPaymentToggle={setPaymentToggle}/>
     }
      <div className='flex justify-between px-[24px] py-[12px] mx-[24px] rounded-md bg-blue-100'>
       <button className='text-blue-700 text-[24px] font-medium'>

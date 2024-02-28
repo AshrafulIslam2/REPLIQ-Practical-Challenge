@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Payment = ({setPaymentToggle}) => {
+const Payment = ({setPaymentToggle,total}) => {
   return (
     <div className=" bg-transparent backdrop-brightness-75 flex  gap-x-4  absolute top-0 right-0 h-screen w-screen  ">
    
   <div className="bg-white   h-full w-6/12   p-[24px] ml-auto ">
    <div className='flex justify-between py-[44px] px-[12px] bg-slate-300 text-white font-medium text-[24px] rounded-md'>
     <h1>Order Amount</h1>
-    <h1>5000</h1>
+    <h1>${total}</h1>
    </div>
     <div className="flex my-[40px] border rounded-tr-md rounded-tl-md ">
      <div className='w-[30%] border min-h-screen'>
